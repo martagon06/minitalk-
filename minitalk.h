@@ -6,7 +6,7 @@
 /*   By: miguelmo <miguelmo@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 19:43:49 by miguelmo          #+#    #+#             */
-/*   Updated: 2025/08/31 18:40:33 by miguelmo         ###   ########.fr       */
+/*   Updated: 2025/09/01 15:08:03 by miguelmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 
 
 void send_char(pid_t server_pid, char c);
-void signal_handler(int sig);
+void handle_signal(int sig);
 
 
 #endif
