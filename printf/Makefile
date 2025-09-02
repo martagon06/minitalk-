@@ -1,4 +1,4 @@
-NAME = libftprintf.a
+NAME = printf.a
 SOURCES = ft_calloc.c ft_filter.c\
 ft_hex_num_len.c\
 ft_hexa_max.c\
