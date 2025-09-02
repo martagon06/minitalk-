@@ -6,7 +6,7 @@
 /*   By: miguelmo <miguelmo@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 18:26:28 by miguelmo          #+#    #+#             */
-/*   Updated: 2025/09/01 15:08:00 by miguelmo         ###   ########.fr       */
+/*   Updated: 2025/09/02 11:13:13 by miguelmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,11 @@ void send_char(pid_t server_pid, char c)
     bit = 0;
     while(bit < 8)
     {
-        if()
+        if((c >> bit) & 1)
+            kill(server_pid, SIGUSR2);
+        else
+            kill(server_pid, SIGUSR1);
+        usleep(100);
+        bit++;
     }
 }
